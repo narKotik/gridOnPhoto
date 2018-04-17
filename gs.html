@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+<style>
+.animated.flip {
+    backface-visibility: visible;
+    animation-name: flip;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+.text {
+    text-align: center;
+    font-size: 8em;
+    color: gold;
+    margin: 0px;
+    margin:0;
+    padding:0;
+}
+
+.subtitle{
+    color: gold;
+    text-align: center;
+    font-size: 5em;
+    margin:0;
+    padding:0;
+}
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+@keyframes flip{
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+        animation-timing-function: linear;
+    }
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+</style>
+</head>
+<body>
+    <h1 class="flip animated infinite text">GS</h1>
+    <h2 class="subtitle">coming soon</h2>
+<body>
+</html>
